@@ -1,0 +1,124 @@
+<TaskerData sr="" dvi="1" tv="6.6.19">
+	<Profile sr="prof9" ve="2">
+		<cdate>1768468894902</cdate>
+		<clp>true</clp>
+		<edate>1771185237573</edate>
+		<flags>8</flags>
+		<id>9</id>
+		<mid0>7</mid0>
+		<mid1>8</mid1>
+		<nme>Charging Sounds</nme>
+		<Share sr="Share">
+			<b>false</b>
+			<d>Play a sound or say something out loud when your phone is connected or disconnected from power.
+&lt;br/&gt;&lt;br/&gt;
+This is the default sound: &lt;a href="https://joaoapps.com/Tasker/High%20tech%20-%20Sound%20effect.mp3"&gt;Sound File&lt;/a&gt;</d>
+			<g>Basics,Sound,Power</g>
+			<p>true</p>
+			<t></t>
+		</Share>
+		<State sr="con0" ve="2">
+			<code>10</code>
+			<Int sr="arg0" val="0"/>
+		</State>
+	</Profile>
+	<Task sr="task7">
+		<cdate>1600850982375</cdate>
+		<edate>1771185237573</edate>
+		<id>7</id>
+		<pri>100</pri>
+		<rty>2</rty>
+		<Action sr="act0" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%sound_file_plug</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>342</code>
+			<Int sr="arg0" val="5"/>
+			<Str sr="arg1" ve="3">%sound_file_plug</Str>
+			<Str sr="arg2" ve="3">%exists</Str>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>445</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%sound_file_plug</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="3"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>38</code>
+		</Action>
+		<ProfileVariable sr="pv0">
+			<clearout>false</clearout>
+			<exportval></exportval>
+			<immutable>false</immutable>
+			<pvci>true</pvci>
+			<pvd>Select the sound you want to play when you connect your device to power. Cancel to not pay a sound.</pvd>
+			<pvdn>Charging Sound</pvdn>
+			<pvid>7</pvid>
+			<pvit>t</pvit>
+			<pvn>%sound_file_plug</pvn>
+			<pvt>f</pvt>
+			<strout>false</strout>
+		</ProfileVariable>
+	</Task>
+	<Task sr="task8">
+		<cdate>1600851024555</cdate>
+		<edate>1768577532952</edate>
+		<id>8</id>
+		<rty>2</rty>
+		<Action sr="act0" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%sound_file_unplug</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>342</code>
+			<Int sr="arg0" val="5"/>
+			<Str sr="arg1" ve="3">%sound_file_unplug</Str>
+			<Str sr="arg2" ve="3">%exists</Str>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>445</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%sound_file_unplug</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="3"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>38</code>
+		</Action>
+		<ProfileVariable sr="pv0">
+			<clearout>false</clearout>
+			<exportval></exportval>
+			<immutable>false</immutable>
+			<pvci>true</pvci>
+			<pvd>Select the sound you want to play when you connect your device to power. Cancel to not pay a sound.</pvd>
+			<pvdn>Sound When Charging Stops</pvdn>
+			<pvid>8</pvid>
+			<pvit>t</pvit>
+			<pvn>%sound_file_unplug</pvn>
+			<pvt>f</pvt>
+			<strout>false</strout>
+		</ProfileVariable>
+	</Task>
+</TaskerData>
